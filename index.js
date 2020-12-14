@@ -21,6 +21,7 @@ const argv = yargs(hideBin(process.argv))
     describe: 'Получить результаты игры, сохраненной в указанный JSON-файл',
     type: 'string'
   })
+  .conflicts('start', 'total')
   .check((argv, options) => {
     if (argv.start && /^.*\.json$/g.test(argv.start)) {
       return true;
