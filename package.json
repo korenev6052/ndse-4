@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "round": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/korenev6052/ndse-4.git"
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/korenev6052/ndse-4/issues"
   },
-  "homepage": "https://github.com/korenev6052/ndse-4#readme"
+  "homepage": "https://github.com/korenev6052/ndse-4#readme",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
 }
